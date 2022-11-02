@@ -1,5 +1,5 @@
 {
-  "name": "Social Networking API",
+  "name": "social-networking-api",
   "version": "1.0.1",
   "description": "Social Networking API for connecting users, thoughts, and reactions",
   "main": "server.js",
