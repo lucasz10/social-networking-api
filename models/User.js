@@ -4,15 +4,15 @@ const userSchema = new Schema(
   {
     username: {
         type: String, 
-        Unique: true, 
-        Required: true, 
-        Trimmed: true 
+        unique: true, 
+        required: true, 
+        trim: true 
     },
     email: { 
         type: String,
-        Unique: true,
-        Required: true,
-        match: []
+        unique: true,
+        required: true,
+        match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/]
     },
     thoughts: [
       {
